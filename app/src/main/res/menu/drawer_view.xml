@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_restaurants"
+            android:icon="@drawable/ic_restaurant_black_24dp"
+            android:title="Restaurants" />
+        <item
+            android:id="@+id/nav_hotels"
+            android:icon="@drawable/ic_hotel_black_24dp"
+            android:title="Hotels" />
+        <item
+            android:id="@+id/nav_cafes"
+            android:icon="@drawable/ic_local_cafe_black_24dp"
+            android:title="Cafes" />
+        <item
+            android:id="@+id/nav_parks"
+            android:icon="@drawable/ic_park_black_24dp"
+            android:title="Parks" />
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/ic_event_available_black_24dp"
+            android:title="Events" />
+        <item
+            android:id="@+id/nav_bazaars"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="Bazaars" />
+        <item
+            android:id="@+id/nav_trasportation"
+            android:icon="@drawable/ic_directions_transit_black_24dp"
+            android:title="Trasportation" />
+        <item
+            android:id="@+id/nav_night_clubs"
+            android:icon="@drawable/ic_local_bar_black_24dp"
+            android:title="Night Clubs" />
+        <item
+            android:id="@+id/nav_museums"
+            android:icon="@drawable/ic_museum_black_24dp"
+            android:title="Museums" />
+    </group>
+</menu>

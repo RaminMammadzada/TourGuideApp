@@ -3,4 +3,15 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="element_name">Element name will here</string>
+    <string name="element_type">Element type will be here</string>
+    <string name="price_text">Price: </string>
+    <string name="price_level_placeholder">$$$$</string>
+    <string name="about_placeholder">Perfect choice for kebabs</string>
+    <string name="start_level_placeholder">5</string>
+    <string name="star_text">Star:</string>
+    <string name="location_text">Location:</string>
+    <string name="location_placeholder">Istanbul Sisli, No:9, 34885, Istanbul</string>
+    <string name="website_text">Website:</string>
+    <string name="website_placeholder">www.tryabc.com</string>
 </resources>

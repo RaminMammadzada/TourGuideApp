@@ -13,12 +13,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
-    private TextView welcomeText;
+    private ImageView welcomeImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         actionbar.setHomeAsUpIndicator(R.drawable.ic_menu);
 
         mDrawerLayout = findViewById(R.id.drawer_layout);
-        welcomeText = findViewById( R.id.welcome_text );
+        welcomeImage = findViewById( R.id.welcome_image );
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public boolean onNavigationItemSelected(MenuItem menuItem) {
                         // set item as selected to persist highlight
-                        welcomeText.setVisibility( View.GONE );
+                        welcomeImage.setVisibility( View.GONE );
                         menuItem.setChecked(true);
                         // close drawer when item is tapped
                         mDrawerLayout.closeDrawers();
@@ -51,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
 
                         // Find the view pager that will allow the user to swipe between fragments
                         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
-
 
                         // Create an adapter that knows which fragment should be shown on each page
                         CategoryAdapter adapter = new CategoryAdapter(getSupportFragmentManager(), menuItem.getItemId());

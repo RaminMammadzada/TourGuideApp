@@ -23,27 +23,27 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        super.onCreate( savedInstanceState );
         // Set the content of the activity to use the activity_main.xml layout file
-        setContentView(R.layout.activity_main);
+        setContentView( R.layout.activity_main );
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        Toolbar toolbar = findViewById( R.id.toolbar );
+        setSupportActionBar( toolbar );
         ActionBar actionbar = getSupportActionBar();
-        actionbar.setDisplayHomeAsUpEnabled(true);
-        actionbar.setHomeAsUpIndicator(R.drawable.ic_menu);
+        actionbar.setDisplayHomeAsUpEnabled( true );
+        actionbar.setHomeAsUpIndicator( R.drawable.ic_menu );
 
-        mDrawerLayout = findViewById(R.id.drawer_layout);
+        mDrawerLayout = findViewById( R.id.drawer_layout );
         welcomeImage = findViewById( R.id.welcome_image );
 
-        NavigationView navigationView = findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById( R.id.nav_view );
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
                     public boolean onNavigationItemSelected(MenuItem menuItem) {
                         // set item as selected to persist highlight
                         welcomeImage.setVisibility( View.GONE );
-                        menuItem.setChecked(true);
+                        menuItem.setChecked( true );
                         // close drawer when item is tapped
                         mDrawerLayout.closeDrawers();
 
@@ -51,21 +51,21 @@ public class MainActivity extends AppCompatActivity {
                         // For example, swap UI fragments here
 
                         // Find the view pager that will allow the user to swipe between fragments
-                        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+                        ViewPager viewPager = (ViewPager) findViewById( R.id.viewpager );
 
                         // Create an adapter that knows which fragment should be shown on each page
-                        CategoryAdapter adapter = new CategoryAdapter(getSupportFragmentManager(), menuItem.getItemId());
+                        CategoryAdapter adapter = new CategoryAdapter( getSupportFragmentManager(), menuItem.getItemId() );
 
                         // Set the adapter onto the view pager
-                        viewPager.setAdapter(adapter);
+                        viewPager.setAdapter( adapter );
 
                         // Give the TabLayout the ViewPager
-                        TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
-                        tabLayout.setupWithViewPager(viewPager);
+                        TabLayout tabLayout = (TabLayout) findViewById( R.id.sliding_tabs );
+                        tabLayout.setupWithViewPager( viewPager );
 
                         return true;
                     }
-                });
+                } );
 
         mDrawerLayout.addDrawerListener(
                 new DrawerLayout.DrawerListener() {
@@ -98,9 +98,9 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                mDrawerLayout.openDrawer( GravityCompat.START);
+                mDrawerLayout.openDrawer( GravityCompat.START );
                 return true;
         }
-        return super.onOptionsItemSelected(item);
+        return super.onOptionsItemSelected( item );
     }
 }

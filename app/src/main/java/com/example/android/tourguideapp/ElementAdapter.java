@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class ElementAdapter extends ArrayAdapter<Element> {
 
     public ElementAdapter(Activity context, ArrayList<Element> elements) {
-        super(context, 0, elements);
+        super( context, 0, elements );
     }
 
     @Override
@@ -24,23 +24,22 @@ public class ElementAdapter extends ArrayAdapter<Element> {
 
         // check if the current view is reused else inflate the view
         View listItemView = convertView;
-        if(listItemView == null){
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
+        if (listItemView == null) {
+            listItemView = LayoutInflater.from( getContext() ).inflate( R.layout.list_item, parent, false );
         }
 
         //get the object located at position
-        Element element_item = getItem(position);
+        Element element_item = getItem( position );
 
 
-
-        if(element_item.getmElementTitle() != "") {
+        if (element_item.getmElementTitle() != "") {
             //find the textview in list_item with id default_text_view
             TextView elementTitle = (TextView) listItemView.findViewById( R.id.element_title );
             //gets the default Translation and set it to the text of this textView
             elementTitle.setText( element_item.getmElementTitle() );
         }
 
-        if(element_item.getmElementType() !="") {
+        if (element_item.getmElementType() != "") {
             //find the textview in list_item with id default_text_view
             TextView elementType = (TextView) listItemView.findViewById( R.id.element_type );
             //gets the default Translation and set it to the text of this textView
@@ -50,7 +49,7 @@ public class ElementAdapter extends ArrayAdapter<Element> {
         // price level of the restaurant and hotels
         TextView element_price_tv = (TextView) listItemView.findViewById( R.id.price_text_view );
         TextView elementPriceLevel = (TextView) listItemView.findViewById( R.id.price_level );
-        if(element_item.getmElementType() == "Restaurant" || element_item.getmElementType() == "Hotel" ) {
+        if (element_item.getmElementType() == "Restaurant" || element_item.getmElementType() == "Hotel") {
             element_price_tv.setText( R.string.price_text );
             elementPriceLevel.setText( element_item.getmPriceLevel() );
         } else {
@@ -62,7 +61,7 @@ public class ElementAdapter extends ArrayAdapter<Element> {
         // star level of hotels
         TextView element_star_tv = (TextView) listItemView.findViewById( R.id.star_text_view );
         TextView elementStarLevel = (TextView) listItemView.findViewById( R.id.star_level );
-        if( element_item.getmElementType() == "Hotel" ) {
+        if (element_item.getmElementType() == "Hotel") {
             element_star_tv.setText( R.string.star_text );
             elementStarLevel.setText( String.valueOf( element_item.getmStarNumber() ) );
         } else {
@@ -71,7 +70,7 @@ public class ElementAdapter extends ArrayAdapter<Element> {
         }
 
 
-        if(element_item.getmElementBody() !="") {
+        if (element_item.getmElementBody() != "") {
             //find the textview in list_item with id miwok_text_view
             TextView elementBody = (TextView) listItemView.findViewById( R.id.element_body );
             //gets the miwok Translation and set it to the text of this textView
@@ -80,21 +79,20 @@ public class ElementAdapter extends ArrayAdapter<Element> {
 
 
         //find the image view with id image
-        ImageView mImageView = (ImageView) listItemView.findViewById(R.id.image);
-        if(element_item.hasImage()) {
+        ImageView mImageView = (ImageView) listItemView.findViewById( R.id.image );
+        if (element_item.hasImage()) {
 
             //get the imageResource get and set it as source of the image view
-            mImageView.setImageResource(element_item.getmImageResourceId());
+            mImageView.setImageResource( element_item.getmImageResourceId() );
 
             //make the image view visible
-            mImageView.setVisibility( View.VISIBLE);
-        }
-        else {
-            mImageView.setVisibility( View.GONE);
+            mImageView.setVisibility( View.VISIBLE );
+        } else {
+            mImageView.setVisibility( View.GONE );
         }
 
 
-        if( element_item.getmLocation().getFullLocation() != null){
+        if (element_item.getmLocation().getFullLocation() != null) {
             TextView element_location_tv = (TextView) listItemView.findViewById( R.id.location_text_view );
             element_location_tv.setText( R.string.location_text );
 
@@ -102,12 +100,12 @@ public class ElementAdapter extends ArrayAdapter<Element> {
             element_location.setText( element_item.getmLocation().getFullLocation() );
         }
 
-        if( element_item.getmWebAddress() != ""){
+        if (element_item.getmWebAddress() != "") {
             TextView element_website_tv = (TextView) listItemView.findViewById( R.id.website_text_view );
             element_website_tv.setText( R.string.website_text );
 
             TextView element_website = (TextView) listItemView.findViewById( R.id.website );
-            element_website.setText( element_item.getmWebAddress());
+            element_website.setText( element_item.getmWebAddress() );
         }
 
         return listItemView;

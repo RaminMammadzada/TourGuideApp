@@ -78,7 +78,7 @@ public class Location {
         this.mPostCode = mPostCode;
     }
 
-    public String getFullLocation(){
+    public String getFullLocation() {
         return "" + mDistrict + ", " + mArea + ", " + mStreet + ", No: " + mBuildingNumber + "/" + mFlatNumber + ", " + mCity + "" + mCountry + " " + mPostCode;
     }
 

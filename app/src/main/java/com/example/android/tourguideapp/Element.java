@@ -4,31 +4,31 @@ import android.media.Image;
 
 public class Element {
 
-    private String mElementType="";
-    private String mElementTitle="";
-    private String mElementBody="";
-    private String mPriceLevel="";
-    private int mStarNumber=0;
+    private String mElementType = "";
+    private String mElementTitle = "";
+    private String mElementBody = "";
+    private String mPriceLevel = "";
+    private int mStarNumber = 0;
 
-    private String mWebAddress="";
+    private String mWebAddress = "";
 
     private Location mLocation;
 
-    private String mPhoneNumber="";
+    private String mPhoneNumber = "";
 
-    /** Image resource ID for the word */
+    /**
+     * Image resource ID for the word
+     */
     private int mImageResourceId = NO_IMAGE_PROVIDED;
 
 
-    /** Constant value that represents no image was provided for this word */
+    /**
+     * Constant value that represents no image was provided for this word
+     */
     private static final int NO_IMAGE_PROVIDED = -1;
 
     public Location getmLocation() {
         return mLocation;
-    }
-
-    public void setmLocation(Location mLocation) {
-        this.mLocation = mLocation;
     }
 
     public int getmStarNumber() {
@@ -60,7 +60,6 @@ public class Element {
         this.mPriceLevel = mPriceLevel;
         this.mStarNumber = mStarNumber;
     }
-
 
 
     public String getmWebAddress() {
@@ -113,7 +112,7 @@ public class Element {
 
 
     public boolean hasImage() {
-        if(mImageResourceId != -1){
+        if (mImageResourceId != -1) {
             return true;
         } else return false;
     }

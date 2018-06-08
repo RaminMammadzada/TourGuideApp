@@ -19,11 +19,11 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     private int mMenuItemId = 0;
 
     public CategoryAdapter(FragmentManager fm, int menuItemId) {
-        super(fm);
+        super( fm );
         this.mMenuItemId = menuItemId;
 
-        if(menuItemId == R.id.nav_holiday_trip) {
-            this.mTabTitles = new String[] { "Restaurants", "Hotels", "Bazaars", "Museums"};
+        if (menuItemId == R.id.nav_holiday_trip) {
+            this.mTabTitles = new String[]{"Restaurants", "Hotels", "Bazaars", "Museums"};
         }
     }
 
@@ -31,7 +31,7 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     public android.support.v4.app.Fragment getItem(int position) {
 
 
-        if(mMenuItemId == R.id.nav_holiday_trip){
+        if (mMenuItemId == R.id.nav_holiday_trip) {
             switch (position) {
                 case 0:
                     return new RestaurantsFragment();

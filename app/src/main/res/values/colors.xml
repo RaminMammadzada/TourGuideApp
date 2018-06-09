@@ -26,5 +26,13 @@
     <color name="category_phrases">#16AFCA</color>
 
     <!--Text color for tabs-->
-    <color name="tab_Default_color">#A8A19E</color>>
+    <color name="tab_Default_color">#A8A19E</color>
+    <color name="element_header">#18376a</color>
+    <color name="element_type">#877f80</color>
+    <color name="element_price">#877f80</color>
+    <color name="element_star">#877f80</color>
+    <color name="element_line_color">#FFCCDDCC</color>
+    <color name="element_about">#877f80</color>
+    <color name="element_location">#877f80</color>
+    <color name="element_website">#877f80</color>>
 </resources>

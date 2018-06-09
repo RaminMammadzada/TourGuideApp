@@ -111,6 +111,15 @@
     <string name="Avantgrade_hotel_price">$</string>
     <string name="Elmali_hotel_price">$$$$$</string>
     <string name="Double_tree_hotel_price">$$$</string>
+    <string name="navigation_title">My header title</string>
 
+
+    <!-- Header array-->
+    <string-array name="headers">
+        <item>Restaurants</item>
+        <item>Hotels</item>
+        <item>Bazaars</item>
+        <item>Museums</item>
+    </string-array>
 
 </resources>

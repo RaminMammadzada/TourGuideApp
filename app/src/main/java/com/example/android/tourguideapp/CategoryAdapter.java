@@ -17,13 +17,14 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
     private String mTabTitles[];
     private int mMenuItemId = 0;
+    private String[] headers;
 
-    public CategoryAdapter(FragmentManager fm, int menuItemId) {
+    public CategoryAdapter(FragmentManager fm, int menuItemId, String[] headers) {
         super( fm );
         this.mMenuItemId = menuItemId;
 
         if (menuItemId == R.id.nav_holiday_trip) {
-            this.mTabTitles = new String[]{"Restaurants", "Hotels", "Bazaars", "Museums"};
+            this.mTabTitles = headers;
         }
     }
 

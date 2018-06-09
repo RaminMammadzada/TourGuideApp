@@ -16,6 +16,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
@@ -53,8 +55,11 @@ public class MainActivity extends AppCompatActivity {
                         // Find the view pager that will allow the user to swipe between fragments
                         ViewPager viewPager = (ViewPager) findViewById( R.id.viewpager );
 
+                        // headers are given to the CategoryAdapter
+                        String[] headers= getResources().getStringArray( R.array.headers );
+
                         // Create an adapter that knows which fragment should be shown on each page
-                        CategoryAdapter adapter = new CategoryAdapter( getSupportFragmentManager(), menuItem.getItemId() );
+                        CategoryAdapter adapter = new CategoryAdapter( getSupportFragmentManager(), menuItem.getItemId(), headers );
 
                         // Set the adapter onto the view pager
                         viewPager.setAdapter( adapter );

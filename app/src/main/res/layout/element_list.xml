@@ -6,6 +6,4 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:drawSelectorOnTop="true"
-    android:id="@+id/element_list">
-
-</ListView>
+    android:id="@+id/element_list" />

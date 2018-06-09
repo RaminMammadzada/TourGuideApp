@@ -39,12 +39,6 @@ public class HotelsFragment extends Fragment {
         // finding the listView and setting the adapter to it
         findListViewSetAdapter( rootView, itemAdapter );
 
-/*        TextView textView = new TextView( getActivity() );
-        textView.setText( "Restaurants" );
-        textView.setTextSize( 20 );
-        return textView;*/
-
-
         return rootView;
 
 

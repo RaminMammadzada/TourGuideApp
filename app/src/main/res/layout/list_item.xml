@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:textColor="#18376a"
+        android:textColor="@color/element_header"
         tools:text="@string/element_name"
         />
 
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="11sp"
-        android:textColor="#877f80"
+        android:textColor="@color/element_type"
         tools:text="@string/element_type"
         />
     <LinearLayout
@@ -37,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="11sp"
-            android:textColor="#877f80"
+            android:textColor="@color/element_price"
             tools:text="@string/price_text"
             />
 
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:textSize="11sp"
-            android:textColor="#877f80"
+            android:textColor="@color/element_price"
             tools:text="@string/price_level_placeholder"
             />
 
@@ -61,7 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="11sp"
-            android:textColor="#877f80"
+            android:textColor="@color/element_star"
             tools:text="@string/star_text"
             />
 
@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:textSize="11sp"
-            android:textColor="#877f80"
+            android:textColor="@color/element_star"
             tools:text="@string/start_level_placeholder"
             />
 
@@ -80,7 +80,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="#FFCCDDCC"
+        android:background="@color/element_line_color"
         android:layout_marginRight="278dp"
         android:layout_marginTop="2dp"
         android:layout_marginBottom="2dp"/>
@@ -90,7 +90,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="13sp"
-        android:textColor="#877f80"
+        android:textColor="@color/element_about"
         tools:text="@string/about_placeholder"
         />
 
@@ -111,7 +111,7 @@
             android:layout_height="wrap_content"
             android:textSize="11sp"
             android:textStyle="bold"
-            android:textColor="#877f80"
+            android:textColor="@color/element_location"
             tools:text="@string/location_text"
             />
 
@@ -121,7 +121,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:textSize="11sp"
-            android:textColor="#877f80"
+            android:textColor="@color/element_location"
             tools:text="@string/location_placeholder"
             />
 
@@ -136,7 +136,7 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="11sp"
-            android:textColor="#877f80"
+            android:textColor="@color/element_website"
             tools:text="@string/website_text"
             />
 

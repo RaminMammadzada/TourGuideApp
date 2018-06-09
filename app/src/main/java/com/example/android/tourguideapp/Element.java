@@ -66,50 +66,21 @@ public class Element {
         return mWebAddress;
     }
 
-    public void setmWebAddress(String mWebAddress) {
-        this.mWebAddress = mWebAddress;
-    }
-
-    public String getmPhoneNumber() {
-        return mPhoneNumber;
-    }
-
-    public void setmPhoneNumber(String mPhoneNumber) {
-        this.mPhoneNumber = mPhoneNumber;
-    }
-
     public String getmElementType() {
         return mElementType;
-    }
-
-    public void setmElementType(String mElementType) {
-        this.mElementType = mElementType;
     }
 
     public String getmElementTitle() {
         return mElementTitle;
     }
 
-    public void setmElementTitle(String mElementTitle) {
-        this.mElementTitle = mElementTitle;
-    }
-
     public String getmElementBody() {
         return mElementBody;
-    }
-
-    public void setmElementBody(String mElementBody) {
-        this.mElementBody = mElementBody;
     }
 
     public int getmImageResourceId() {
         return mImageResourceId;
     }
-
-    public void setmImageResourceId(int mImageResourceId) {
-        this.mImageResourceId = mImageResourceId;
-    }
-
 
     public boolean hasImage() {
         if (mImageResourceId != -1) {
